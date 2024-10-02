@@ -1,0 +1,310 @@
+body {
+    
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    background-image: url(img/bgEstelar.jpeg);    
+    background-size: auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+    
+}
+
+h1, h2 {
+    color: #dcdcdc;
+    text-shadow: 2px 2px 2px black;
+}
+p {
+    margin-bottom: 10px;
+    text-align: left;
+}
+ul  .format-li{
+    list-style-type: disc;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.section {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+
+
+.logo{
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    background-image: url(img/logo1.jpeg);    
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.8;
+    border-radius: 50%;
+    box-shadow: 3px 1px 5px rgb(76, 201, 242);
+    animation: girar 15s both;
+}
+
+.logo:hover{
+    box-shadow: 3px 1px 5px rgb(238, 246, 8);
+    
+}
+@keyframes girar {
+    0% {
+        
+        transform: scale(50%);
+    }
+    5%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.header {
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /*background-image: url(img/bg1.jpeg);*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    
+}
+
+
+
+
+
+.header-menu {
+    display: flex;
+
+}
+li{
+    list-style-type: none;
+}
+.header-menu li{
+    margin-left: 10px;
+}
+
+.header-menu li a {
+    display: block;
+    padding: 12px;
+    
+    background-color: rgb(28, 23, 33);
+    box-shadow: 3px 2px 2px rgb(171, 171, 171);
+}
+
+.header-menu a:hover{
+    background-color: black;
+    box-shadow: 3px 1px 5px rgb(238, 246, 8);
+}
+
+/* parte do corpo do site*/
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scroll-hiden::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroll-hiden {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.main{
+    background-color: rgb(34, 24, 41);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    color: aliceblue;
+    border-radius: 20px 75px;
+    
+    
+    
+    
+}
+
+.tam{
+    margin: auto; 
+    margin-top: 10px;
+     
+    padding: 45px;
+    width: 90%;
+    height: 55vh;
+    box-shadow: 7px 7px 9px rgb(9, 12, 12);
+
+   
+    
+}
+.menu-nav{
+    display: flex;
+    flex-direction: column;    
+    width: 170px;
+    height: 80.5%;
+    margin-right: 20px;    
+    background-color: rgb(54, 55, 90);
+    padding: 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 20px 60px;
+    box-shadow: 5px 3px 4px black;
+}
+
+
+.menu-nav li a {
+    display: block;
+    padding: 10px;
+    width: 120px;
+    height: 40%;
+    background-color: rgb(40, 42, 41);
+    margin-top: 1px;
+    border-radius: 25px;
+    box-shadow: 5px 3px 4px black;
+}
+
+.menu-nav a:hover{
+    background-color: black;
+    box-shadow: 3px 1px 5px rgb(238, 246, 8);
+}
+
+li{
+       
+    text-align: center;
+    
+}
+
+
+.text{
+    
+    height: 300px;
+    max-width: 90%;
+    flex: 1;
+    padding: 25px;
+    margin: auto;
+    margin-bottom: 25px;
+    background-color: rgb(54, 55, 90);
+    opacity: 0.9;
+    text-align: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 25px 65px 25px 20px;
+    box-shadow: 3px 3px 7px black;
+    
+    
+}
+
+.text h1{
+    padding: 10px;
+    margin: 15px;
+    
+    
+}
+
+.rodape{
+    
+    
+    position: fixed; 
+    left: 0;   
+    bottom: 0;
+    width: 100%;
+    background-image: url(img/bgEstelar.jpeg);    
+    height: 10%;
+    color: white;    
+    
+    
+    
+}
+.rodape p{
+    text-align: center;
+    
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+
+    body{
+        background-size: cover;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        
+        width: 80%;
+    }
+
+    .header-menu li {
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 2px;
+        z-index: 1;
+    }
+    .logo{
+        padding: 40px;
+        background-position: center;
+        width: 50px;
+        
+        
+    }
+    .main {
+        border-radius: 20px;
+        margin-bottom: 150px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tam {
+        width: 70%;
+        height: auto;
+        padding: 40px;
+        background-color: rgb(57, 54, 59);
+    }
+
+    .menu-nav {
+        width: 60%;
+        height: auto;
+        margin-right: 0;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .menu-nav li a {
+        
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+    .text {
+        width: 80%;
+        height: auto;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .rodape{
+        height: 60px;
+        
+    }
+   .rodape p{ 
+        text-align: center;
+        margin: auto;
+    }
+}
+
